@@ -1,27 +1,12 @@
 import React, { useState } from 'react'
+import '../App.css'
 
-const Card = () => {
-    const [nombre, setNombre] = useState('')
-    const [apellido, setApellido] = useState('')
+const Card = (props) => {
+    
   return (
-    <div className='app'>
-        <h1>Soy Una Tarjeta</h1>
-        <form style={}>
-            <label>Nombre:</label>
-            <input 
-                type="text" 
-                name='nombre'
-                value={nombre}
-                onChange={(e) => setNombre(e.target.value)}
-            />
-            <label>Apellido:</label>
-            <input 
-                type="text" 
-                name='apellido'
-                value={apellido}
-                onChange={(e) => setApellido(e.target.value)}
-            />
-        </form>
+    <div className='card'>
+      <h1>Gracias { props.nombre } !</h1>
+      <h2>su animal favorito es {props.animal}</h2>
     </div>
   )
 }
