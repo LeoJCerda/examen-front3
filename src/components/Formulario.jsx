@@ -1,7 +1,7 @@
 import React from 'react'
 import Card from './Card'
 import { useState } from 'react'
-import '../app.css'
+import '../App.css'
 
 const Formulario = (props) => {
 
